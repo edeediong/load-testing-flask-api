@@ -1,0 +1,8 @@
+.pytest_cache
+env
+.idea
+.env
+__pycache__
+.gitignore
+Dockerfile
+testing.Dockerfile
