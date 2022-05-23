@@ -1,5 +1,7 @@
 # Infura Test
 
+This application is inspired by an assessment taken by a friend who needed help load testing his code. This [StackOverflow question](https://stackoverflow.com/questions/46893226/performance-load-and-stress-testing-in-django) has its implementation in this repository.
+
 ## Prerequisites
 
 * Ensure you have [Postman](https://www.postman.com/downloads/) installed to run commands
@@ -18,7 +20,7 @@ To run the app, take the following steps:
 
 * Run the application with `docker run --env-file .env -p 5000:5000 infura_api`
 
-## Testing
+## Unit Testing
 
 To run tests, perform the following actions:
 
@@ -26,7 +28,15 @@ To run tests, perform the following actions:
 
 * Run the application with `docker run --env-file .env infura_test`
 
-## Load Test Results Analysis
+## Load Test
+
+### Setup
+
+Start up the locust server using the command `locust` on the terminal.
+
+There are other tools that help with load testing applications. More information can be found on [Blazemeter](https://www.blazemeter.com/blog/open-source-load-testing-tools-which-one-should-you-use).
+
+### Load Test Results Analysis
 
 You can click on the [results file](results/load_test.html) and open it in a browser to see a detailed report of the load testing.
 
